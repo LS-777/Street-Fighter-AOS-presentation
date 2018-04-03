@@ -1,0 +1,201 @@
+/* incomming tasks: get lighter images */
+
+
+
+body {
+    font-size: 1.2em;
+    font-family: 'Lato';
+    font-weight: 300;
+    color:black;
+    background-image: url('126951-world-map-background-1920x1080-for-hd.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*#1e130c*/
+}
+
+
+section{
+    text-align: center;
+}
+.title{
+    width: 43vh;
+}
+
+.subtitle{
+    font-family: 'Press Start 2P', cursive;
+    animation: blinker 1.5s linear infinite;
+    letter-spacing: 3px;
+    margin: 10vh auto;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.heading{
+    border: 2px solid black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display:none; /* to take it later*/
+
+}
+
+.box {
+    width: 40%;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    /*background-image:  linear-gradient(to bottom, #f91c21, #ffc016);
+    */
+    background-color: #cecec4;
+}
+
+
+/* MAIN TOP IMAGES */
+.main_img{
+    height: 100%;
+    width:100%;
+}
+
+.main_img2{
+    height: 100%;
+    width:100%;
+}
+
+
+/* first image according to device width*/
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) {
+    /* Styles pour cette Media Queries */
+    .a{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 600px){
+    /* Styles pour cette Media Queries */
+    .a2{
+        display: none;
+    }
+}
+
+
+
+
+
+.a, .a2 {
+    margin: 10vh auto 0 auto;
+    width: 93%;
+    height: 50vh;
+    padding: 0;
+    /*background-image: url('https://www.goombastomp.com/wp-content/uploads/2016/02/street_fighter___street_jam_by_alvinlee.jpg');
+    background-size: contain;*/
+}
+
+
+
+
+
+
+/* characters vignettes*/
+h4{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 1vh 0 3vh 0;
+}
+.b, .c, .d {
+    margin: 10vh auto 0 auto;
+    overflow:auto;
+    text-align: center;
+}
+
+.char_pres{
+    height: 65%;
+    width:40%;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #f91c21, #ffc016);
+}
+
+.attr{
+    text-align: justify;
+    list-style-type: square;
+}
+
+
+.c {
+
+    width: 33%;
+
+}
+
+
+.d{
+
+    width: 33%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.typewriter{
+    background: #000;
+    display: flex;
+    justify-content: center;
+
+}
+
+.typewriter p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color:  #00FF00;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 7s steps(120, end),
+        blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:  #00FF00}
+}
+
+
+
+/* for the moment, we'll not show the typewriter effects in devices not larger than 1048px*/
+@media only screen and (min-device-width : 0px) and (max-device-width : 1048px) {
+    /* Styles pour cette Media Queries */
+    .typewriter{
+        display:none}
+}
