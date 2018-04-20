@@ -1,0 +1,267 @@
+/* incomming tasks: get lighter images */
+
+
+
+body {
+    font-size: 1.2em;
+    font-family: 'Lato';
+    font-weight: 300;
+    color:black;
+    background-image: url('126951-world-map-background-1920x1080-for-hd.jpg') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*#1e130c*/
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------ heading section ------------------------------------------*/
+section{
+    text-align: center;
+}
+.title{
+    width: 43vh;
+    margin-top: 10vh;
+}
+
+.title2{
+    margin-bottom: 15vh;
+}
+
+/* blinkin subtitle with "press start" style*/
+.subtitle{
+    font-family: 'Press Start 2P', cursive;
+    animation: blinker 1.5s linear infinite;
+    letter-spacing: 3px;
+    margin: 10vh auto;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+
+/* header banner: no display for the moment*/
+.heading{
+    border: 2px solid black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display:none; /* to take it later*/
+
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+
+
+
+/* all aos featured boxes*/
+.box {
+
+    border-radius: 5px;
+    background-color: #cecec4;
+
+}
+
+
+/*--------------------------------------------------- MAIN TOP IMAGES ------------------------------------------*/
+
+/* main top images containers*/
+.a, .a2 {
+    margin: 10vh auto 0 auto;
+    width: 93%;
+    height: 50vh;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 1vh;
+    /*background-image: url('https://www.goombastomp.com/wp-content/uploads/2016/02/street_fighter___street_jam_by_alvinlee.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    */
+
+}
+
+/*top img*/
+.main_img{
+    border-radius: 1vh;
+    height: 100%;
+    width:100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.main_img2{
+    height: 100%;
+    width:100%;
+}
+/*-------------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------------------- first image according to device width ---------------------------------------------*/
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 600px) {
+    /* Styles pour cette Media Queries */
+    .a{
+        display: none;
+    }
+}
+@media only screen and (min-device-width : 600px){
+    /* Styles pour cette Media Queries */
+    .a2{
+        display: none;
+    }
+}
+/*-------------------------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------------------- characters vignettes----------------------------------*/
+h4{
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin: 1vh 0 3vh 0;
+}
+
+
+.card-header{
+    border-bottom: 1px solid rgba(0,0,0,.325);
+
+}
+
+.card-footer{
+    border-top:  1px solid rgba(0,0,0,.325);
+}
+.b, .c, .d {
+    margin: 10vh auto 0 auto;
+    overflow:auto;
+    text-align: center;
+    border:1px solid black;
+    width: 50%;
+}
+
+/* tablets */
+@media only screen and (min-device-width : 577px) and (max-device-width : 768px) {
+    /* Styles pour cette Media Queries */
+    .d{
+        width: 66%;
+    }
+}
+
+/* from small phones to landscape phone */
+@media only screen and (min-device-width : 0px) and (max-device-width : 576px) {
+    /* Styles pour cette Media Queries */
+    .d{
+        width: 99%;
+    }
+}
+
+.char_pres{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #f91c21, #ffc016);
+    height: 40vh;
+    width: 40wh;
+}
+
+
+.char_pres:hover{border: 7px inset #CAE1FF;
+}
+
+
+.attr{
+    font-size: 0.8em;
+    text-align: justify;
+    list-style-type: square;
+}
+
+/*-------------------------------------------------------------*/
+
+
+
+
+
+/*------------------------- brushed metal color-------------------------------------------*/
+
+
+.metal{
+    background: -webkit-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -moz-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -ms-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: -o-radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background: radial-gradient(center, circle farthest-corner, rgba(255,255,255,0) 50%, rgba(200,200,200,1)), -webkit-radial-gradient(center, circle, rgba(255,255,255,.35), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 21%), -webkit-radial-gradient(center, circle, rgba(0,0,0,.2), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 21%), -webkit-radial-gradient(center, circle farthest-corner, #f0f0f0, #c0c0c0);
+    background-size: 100% 100%, 10px 10px, 10px 10px, 100% 100%;
+    background-position: top center, 1px 1px, 0px 0px, top center;
+
+    bottom: 0;
+}
+
+/*---------------------------------------------------------*/
+
+
+
+/* ------------------ span with typewriting effect------------------*/
+.typewriter{
+    background: #000;
+    display: flex;
+    justify-content: center;
+
+}
+
+.typewriter p {
+    font-size: 1.2em;
+    font-weight: 400;
+    color:  #00FF00;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+        typing 7s steps(120, end),
+        blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:  #00FF00}
+}
+
+
+
+/* for the moment, we'll not show the typewriter effects in devices not larger than 1048px*/
+@media only screen and (min-device-width : 0px) and (max-device-width : 1048px) {
+    /* Styles pour cette Media Queries */
+    .typewriter{
+        display:none}
+}
+
+
+/*-------------------------------------------------*/
